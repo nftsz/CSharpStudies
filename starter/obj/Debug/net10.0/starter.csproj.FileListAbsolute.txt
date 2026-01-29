@@ -1,0 +1,14 @@
+/home/tata/c#/starter/bin/Debug/net10.0/starter
+/home/tata/c#/starter/bin/Debug/net10.0/starter.deps.json
+/home/tata/c#/starter/bin/Debug/net10.0/starter.runtimeconfig.json
+/home/tata/c#/starter/bin/Debug/net10.0/starter.dll
+/home/tata/c#/starter/bin/Debug/net10.0/starter.pdb
+/home/tata/c#/starter/obj/Debug/net10.0/starter.GeneratedMSBuildEditorConfig.editorconfig
+/home/tata/c#/starter/obj/Debug/net10.0/starter.AssemblyInfoInputs.cache
+/home/tata/c#/starter/obj/Debug/net10.0/starter.AssemblyInfo.cs
+/home/tata/c#/starter/obj/Debug/net10.0/starter.csproj.CoreCompileInputs.cache
+/home/tata/c#/starter/obj/Debug/net10.0/starter.dll
+/home/tata/c#/starter/obj/Debug/net10.0/refint/starter.dll
+/home/tata/c#/starter/obj/Debug/net10.0/starter.pdb
+/home/tata/c#/starter/obj/Debug/net10.0/starter.genruntimeconfig.cache
+/home/tata/c#/starter/obj/Debug/net10.0/ref/starter.dll
