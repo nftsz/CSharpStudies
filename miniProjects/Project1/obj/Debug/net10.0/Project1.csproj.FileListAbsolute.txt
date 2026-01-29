@@ -12,3 +12,4 @@
 /home/tata/c#/miniProjects/Project1/obj/Debug/net10.0/Project1.pdb
 /home/tata/c#/miniProjects/Project1/obj/Debug/net10.0/Project1.genruntimeconfig.cache
 /home/tata/c#/miniProjects/Project1/obj/Debug/net10.0/ref/Project1.dll
+/home/tata/c#/miniProjects/Project1/obj/Debug/net10.0/Project1.sourcelink.json
