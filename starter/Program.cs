@@ -3,4 +3,6 @@
 //Ex03.Run();
 //Ex04.Run();
 //Ex05.Run();
-Ex06.Run();
+//Ex06.Run();
+//Ex07.Run();
+Ex08.Run();
