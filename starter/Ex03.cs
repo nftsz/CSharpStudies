@@ -2,151 +2,47 @@ public static class Ex03
 {
     public static void Run()
     {
-        // number of assignments per student
-        int examAssignments = 5;
+        int currentAssignments = 5;
 
-        int[] sophiaScores = [93, 87, 98, 95, 100, 94, 90];
-        int[] nicolasScores = [80, 83, 82, 88, 85, 90];
-        int[] zahirahScores = [84, 96, 73, 85, 79, 89, 89, 89];
-        int[] jeongScores = [90, 92, 98, 100, 97, 96];
-        int[] beckyScores = [92, 91, 90, 91, 92, 92, 92];
-        int[] chrisScores = [84, 86, 88, 90, 92, 94, 96, 98];
-        int[] ericScores = [80, 90, 100, 80, 90, 100, 80, 90];
-        int[] gregorScores = [91, 91, 91, 91, 91, 91, 91];
+        int sophia1 = 93;
+        int sophia2 = 87;
+        int sophia3 = 98;
+        int sophia4 = 95;
+        int sophia5 = 100;
 
-        string[] studentNames = ["Sophia", "Nicolas", "Zahira", "Jeong",
-                                "Becky", "Chris", "Eric", "Gregor"];
+        int nicolas1 = 80;
+        int nicolas2 = 83;
+        int nicolas3 = 82;
+        int nicolas4 = 88;
+        int nicolas5 = 85;
 
-        // will store the current student's grades in the loop
-        int[] studentScores = new int[5];
+        int zahirah1 = 84;
+        int zahirah2 = 96;
+        int zahirah3 = 73;
+        int zahirah4 = 85;
+        int zahirah5 = 79;
 
-        string currentStudentLetterGrade = "";
+        int jeong1 = 90;
+        int jeong2 = 92;
+        int jeong3 = 98;
+        int jeong4 = 100;
+        int jeong5 = 97;
+
+        int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+        int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
+        int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
+        int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+
+        decimal sophiaScore = (decimal)sophiaSum / currentAssignments;
+        decimal nicolasScore = nicolasSum / currentAssignments;
+        decimal zahirahScore = zahirahSum / currentAssignments;
+        decimal jeongScore = jeongSum / currentAssignments;
 
         Console.WriteLine("Student\t\tGrade\n");
-
-        // iterate through each student
-        foreach (string name in studentNames)
-        {
-            string currentStudent = name;
-
-            if (currentStudent == "Sophia")
-            {
-                studentScores = sophiaScores;
-            }
-            else if (name == "Nicolas")
-            {
-                studentScores = nicolasScores;
-            }
-            else if (name == "Zahira")
-            {
-                studentScores = zahirahScores;
-            }
-            else if (name == "Jeong")
-            {
-                studentScores = jeongScores;
-            }
-            else if (name == "Becky")
-            {
-                studentScores = beckyScores;
-            }
-            else if (name == "Chris")
-            {
-                studentScores = chrisScores;
-            }
-            else if (name == "Eric")
-            {
-                studentScores = ericScores;
-            }
-            else if (name == "Gregor")
-            {
-                studentScores = gregorScores;
-            }
-            else
-            {
-                continue;
-            }
-
-            int sumAssignmentScores = 0;
-            decimal currentStudentGrade = 0;
-            int gradedAssignments = 0;
-
-            // calculate the total score
-            foreach (int score in studentScores)
-            {
-                gradedAssignments++;
-
-                if (gradedAssignments <= examAssignments)
-                {
-                    sumAssignmentScores += score;
-                }
-                else
-                {
-                    sumAssignmentScores += score / 10;
-                }
-            }
-
-            // compute the final average
-            currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
-
-            if (currentStudentGrade >= 97)
-            {
-                currentStudentLetterGrade = "A+";
-            }
-            else if (currentStudentGrade >= 93)
-            {
-                currentStudentLetterGrade = "A";
-            }
-            else if (currentStudentGrade >= 90)
-            {
-                currentStudentLetterGrade = "A-";
-            }
-            else if (currentStudentGrade >= 87)
-            {
-                currentStudentLetterGrade = "B+";
-            }
-            else if (currentStudentGrade >= 83)
-            {
-                currentStudentLetterGrade = "B";
-            }
-            else if (currentStudentGrade >= 80)
-            {
-                currentStudentLetterGrade = "B-";
-            }
-            else if (currentStudentGrade >= 77)
-            {
-                currentStudentLetterGrade = "C+";
-            }
-            else if (currentStudentGrade >= 73)
-            {
-                currentStudentLetterGrade = "C";
-            }
-            else if (currentStudentGrade >= 70)
-            {
-                currentStudentLetterGrade = "C-";
-            }
-            else if (currentStudentGrade >= 67)
-            {
-                currentStudentLetterGrade = "D+";
-            }
-            else if (currentStudentGrade >= 63)
-            {
-                currentStudentLetterGrade = "D";
-            }
-            else if (currentStudentGrade >= 60)
-            {
-                currentStudentLetterGrade = "D-";
-            }
-            else
-            {
-                currentStudentLetterGrade = "F";
-            }
-
-            Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
-        }
-
-        Console.WriteLine("Press the Enter key to continue");
-        Console.ReadLine();
+        Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
+        Console.WriteLine("Nicolas:\t" + nicolasScore + "\tB");
+        Console.WriteLine("Zahirah:\t" + zahirahScore + "\tB");
+        Console.WriteLine("Jeong:\t\t" + jeongScore + "\tA");
     }
 }
-
 
