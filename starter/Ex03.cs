@@ -48,13 +48,14 @@ public static class Ex03
                 sumAssignmentScores += score;
             }
 
-
             // compute the final average
             currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
 
             Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
-
         }
+
+        Console.WriteLine("Press the Enter key to continue");
+        Console.ReadLine();
     }
 }
 
