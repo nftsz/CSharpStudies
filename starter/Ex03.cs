@@ -4,39 +4,45 @@ public static class Ex03
     {
         int currentAssignments = 5;
 
-        int sophia1 = 93;
-        int sophia2 = 87;
-        int sophia3 = 98;
-        int sophia4 = 95;
-        int sophia5 = 100;
+        int[] sophiaScores = [93, 87, 98, 95, 100];
+        int[] nicolasScores = [80, 83, 82, 88, 85];
+        int[] zahirahScores = [84, 96, 73, 85, 79];
+        int[] jeongScores = [90, 92, 98, 100, 97];
 
-        int nicolas1 = 80;
-        int nicolas2 = 83;
-        int nicolas3 = 82;
-        int nicolas4 = 88;
-        int nicolas5 = 85;
+        int sophiaSum = 0;
+        int nicolasSum = 0;
+        int zahirahSum = 0;
+        int jeongSum = 0;
 
-        int zahirah1 = 84;
-        int zahirah2 = 96;
-        int zahirah3 = 73;
-        int zahirah4 = 85;
-        int zahirah5 = 79;
+        decimal sophiaScore;
+        decimal nicolasScore;
+        decimal zahirahScore;
+        decimal jeongScore;
 
-        int jeong1 = 90;
-        int jeong2 = 92;
-        int jeong3 = 98;
-        int jeong4 = 100;
-        int jeong5 = 97;
+        foreach (int scores in sophiaScores)
+        {
+            sophiaSum += scores;
+        }
+        
+        foreach (int scores in nicolasScores)
+        {
+            nicolasSum += scores;
+        }
 
-        int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
-        int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
-        int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
-        int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+        foreach (int scores in zahirahScores)
+        {
+            zahirahSum += scores;
+        }
 
-        decimal sophiaScore = (decimal)sophiaSum / currentAssignments;
-        decimal nicolasScore = nicolasSum / currentAssignments;
-        decimal zahirahScore = zahirahSum / currentAssignments;
-        decimal jeongScore = jeongSum / currentAssignments;
+        foreach (int scores in jeongScores)
+        {
+            jeongSum += scores;
+        }
+
+        sophiaScore = (decimal)sophiaSum / currentAssignments;
+        nicolasScore = (decimal)nicolasSum / currentAssignments;
+        zahirahScore = (decimal)zahirahSum / currentAssignments;
+        jeongScore = (decimal)jeongSum / currentAssignments;
 
         Console.WriteLine("Student\t\tGrade\n");
         Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
