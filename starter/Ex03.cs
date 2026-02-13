@@ -2,6 +2,7 @@ public static class Ex03
 {
     public static void Run()
     {
+        // number of assignments per student
         int currentAssignments = 5;
 
         int[] sophiaScores = [93, 87, 98, 95, 100];
@@ -11,10 +12,12 @@ public static class Ex03
 
         string[] studentNames = ["Sophia", "Nicolas", "Zahira", "Jeong"];
 
+        // will store the current student's grades in the loop
         int[] studentScores = new int[5];
 
         Console.WriteLine("Student\t\tGrade\n");
 
+        // iterate through each student
         foreach (string name in studentNames)
         {
             string currentStudent = name;
@@ -39,11 +42,14 @@ public static class Ex03
             int sumAssignmentScores = 0;
             decimal currentStudentGrade = 0;
 
+            // calculate the total score
             foreach (int score in studentScores)
             {
                 sumAssignmentScores += score;
             }
 
+
+            // compute the final average
             currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
 
             Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
