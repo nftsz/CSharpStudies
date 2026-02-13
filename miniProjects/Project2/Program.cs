@@ -1,9 +1,5 @@
-﻿using System.Data;
-using System.Diagnostics;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices.Marshalling;
+﻿Random random = new Random();
 
-Random random = new Random();
 int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
