@@ -18,7 +18,8 @@ int[] studentScores = new int[5];
 
 string currentStudentLetterGrade = "";
 
-Console.WriteLine("Student\t\tGrade\n");
+Console.Clear();
+Console.WriteLine("Student\t\tExam Score\tOverall\tGrade\tExtra Credit\n");
 
 // iterate through each student
 foreach (string name in studentNames)
@@ -62,9 +63,15 @@ foreach (string name in studentNames)
         continue;
     }
 
-    int sumAssignmentScores = 0;
-    decimal currentStudentGrade = 0;
     int gradedAssignments = 0;
+    int gradedExtraCreditAssignments = 0;
+
+    int sumExtraCreditScores = 0;
+    int sumExamScores = 0;
+
+    decimal currentStudentGrade = 0;
+    decimal currentStudentExamScore = 0;
+    decimal currentStudentExtraCreditScore = 0;
 
     // calculate the total score
     foreach (int score in studentScores)
@@ -73,16 +80,20 @@ foreach (string name in studentNames)
 
         if (gradedAssignments <= examAssignments)
         {
-            sumAssignmentScores += score;
+            sumExamScores += score;
         }
         else
-        {
-            sumAssignmentScores += score / 10;
+        {   
+            gradedExtraCreditAssignments++;
+            sumExtraCreditScores += score;
         }
     }
 
     // compute the final average
-    currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
+    currentStudentExamScore = (decimal)sumExamScores / examAssignments;
+    currentStudentExtraCreditScore = (decimal)sumExtraCreditScores / gradedExtraCreditAssignments;
+    currentStudentGrade = (decimal)((decimal)sumExamScores + (decimal)sumExtraCreditScores / 10) / examAssignments;
+
 
     if (currentStudentGrade >= 97)
     {
@@ -137,7 +148,7 @@ foreach (string name in studentNames)
         currentStudentLetterGrade = "F";
     }
 
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentExamScore}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCreditScore} ({((decimal)sumExtraCreditScores / 10) / examAssignments} pts)");
 }
 
 Console.WriteLine("Press the Enter key to continue");

@@ -1,0 +1,15 @@
+/home/tata/c#/miniProjects/Project2/bin/Debug/net10.0/Project2
+/home/tata/c#/miniProjects/Project2/bin/Debug/net10.0/Project2.deps.json
+/home/tata/c#/miniProjects/Project2/bin/Debug/net10.0/Project2.runtimeconfig.json
+/home/tata/c#/miniProjects/Project2/bin/Debug/net10.0/Project2.dll
+/home/tata/c#/miniProjects/Project2/bin/Debug/net10.0/Project2.pdb
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.GeneratedMSBuildEditorConfig.editorconfig
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.AssemblyInfoInputs.cache
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.AssemblyInfo.cs
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.csproj.CoreCompileInputs.cache
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.sourcelink.json
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.dll
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/refint/Project2.dll
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.pdb
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/Project2.genruntimeconfig.cache
+/home/tata/c#/miniProjects/Project2/obj/Debug/net10.0/ref/Project2.dll
