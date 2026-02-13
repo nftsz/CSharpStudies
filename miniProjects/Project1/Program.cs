@@ -4,7 +4,6 @@
 Console.WriteLine("Welcome to your Super Calculator");
 Console.WriteLine("Choose an option:");
 Console.WriteLine("[1] Sum  [2] Difference  [3] Product  [4] Quotient  [5] Modulus  [6] Power  [7] Square Root  [0] Quit ");
-//  [4] Quotient   [5] Modulus  [6] Power  [7] Square Root
 
 // The Console.ReadLine() method returns a string, use Convert method
 int userOption = Convert.ToInt32(Console.ReadLine());

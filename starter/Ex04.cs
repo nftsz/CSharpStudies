@@ -2,7 +2,7 @@ public static class Ex04
 {
     public static void Run()
     {
-        Random dice =  new Random();
+        Random dice = new Random();
         int roll1 = dice.Next();
         int roll2 = dice.Next(101);
         int roll3 = dice.Next(50, 101);

@@ -12,3 +12,4 @@
 /home/tata/c#/starter/obj/Debug/net10.0/starter.pdb
 /home/tata/c#/starter/obj/Debug/net10.0/starter.genruntimeconfig.cache
 /home/tata/c#/starter/obj/Debug/net10.0/ref/starter.dll
+/home/tata/c#/starter/obj/Debug/net10.0/starter.sourcelink.json

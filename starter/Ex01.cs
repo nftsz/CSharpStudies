@@ -48,7 +48,6 @@ public static class Ex01
 		Console.WriteLine("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 10/10\t Complete!\n");
 		Console.WriteLine($@"Successfully! Stored in ""C:\Users\{firstName}\Documents\mailbox.txt\""");
 
-
 		// Kon'nichiwa with UTF-16
 		//Console.WriteLine("\u3053\u3093\u306B\u3061\u306F");
 
