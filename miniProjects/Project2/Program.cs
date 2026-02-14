@@ -10,12 +10,11 @@ int[] chrisScores = [84, 86, 88, 90, 92, 94, 96, 98];
 int[] ericScores = [80, 90, 100, 80, 90, 100, 80, 90];
 int[] gregorScores = [91, 91, 91, 91, 91, 91, 91];
 
-string[] studentNames = ["Sophia", "Nicolas", "Zahira", "Jeong",
-                                "Becky", "Chris", "Eric", "Gregor"];
-
 // will store the current student's grades in the loop
 int[] studentScores = new int[5];
 
+string[] studentNames = ["Sophia", "Nicolas", "Zahira", "Jeong",
+                                "Becky", "Chris", "Eric", "Gregor"];
 string currentStudentLetterGrade = "";
 
 Console.Clear();
@@ -27,41 +26,23 @@ foreach (string name in studentNames)
     string currentStudent = name;
 
     if (currentStudent == "Sophia")
-    {
         studentScores = sophiaScores;
-    }
-    else if (name == "Nicolas")
-    {
+    else if (currentStudent == "Nicolas")
         studentScores = nicolasScores;
-    }
-    else if (name == "Zahira")
-    {
+    else if (currentStudent == "Zahira")
         studentScores = zahirahScores;
-    }
-    else if (name == "Jeong")
-    {
+    else if (currentStudent == "Jeong")
         studentScores = jeongScores;
-    }
-    else if (name == "Becky")
-    {
+    else if (currentStudent == "Becky")
         studentScores = beckyScores;
-    }
-    else if (name == "Chris")
-    {
+    else if (currentStudent == "Chris")
         studentScores = chrisScores;
-    }
-    else if (name == "Eric")
-    {
+    else if (currentStudent == "Eric")
         studentScores = ericScores;
-    }
-    else if (name == "Gregor")
-    {
+    else if (currentStudent == "Gregor")
         studentScores = gregorScores;
-    }
     else
-    {
         continue;
-    }
 
     int gradedAssignments = 0;
     int gradedExtraCreditAssignments = 0;
@@ -83,7 +64,7 @@ foreach (string name in studentNames)
             sumExamScores += score;
         }
         else
-        {   
+        {
             gradedExtraCreditAssignments++;
             sumExtraCreditScores += score;
         }
@@ -94,59 +75,19 @@ foreach (string name in studentNames)
     currentStudentExtraCreditScore = (decimal)sumExtraCreditScores / gradedExtraCreditAssignments;
     currentStudentGrade = (decimal)((decimal)sumExamScores + (decimal)sumExtraCreditScores / 10) / examAssignments;
 
-
-    if (currentStudentGrade >= 97)
-    {
-        currentStudentLetterGrade = "A+";
-    }
-    else if (currentStudentGrade >= 93)
-    {
-        currentStudentLetterGrade = "A";
-    }
-    else if (currentStudentGrade >= 90)
-    {
-        currentStudentLetterGrade = "A-";
-    }
-    else if (currentStudentGrade >= 87)
-    {
-        currentStudentLetterGrade = "B+";
-    }
-    else if (currentStudentGrade >= 83)
-    {
-        currentStudentLetterGrade = "B";
-    }
-    else if (currentStudentGrade >= 80)
-    {
-        currentStudentLetterGrade = "B-";
-    }
-    else if (currentStudentGrade >= 77)
-    {
-        currentStudentLetterGrade = "C+";
-    }
-    else if (currentStudentGrade >= 73)
-    {
-        currentStudentLetterGrade = "C";
-    }
-    else if (currentStudentGrade >= 70)
-    {
-        currentStudentLetterGrade = "C-";
-    }
-    else if (currentStudentGrade >= 67)
-    {
-        currentStudentLetterGrade = "D+";
-    }
-    else if (currentStudentGrade >= 63)
-    {
-        currentStudentLetterGrade = "D";
-    }
-    else if (currentStudentGrade >= 60)
-    {
-        currentStudentLetterGrade = "D-";
-    }
-    else
-    {
-        currentStudentLetterGrade = "F";
-    }
+    if (currentStudentGrade >= 97) currentStudentLetterGrade = "A+";
+    else if (currentStudentGrade >= 93) currentStudentLetterGrade = "A";
+    else if (currentStudentGrade >= 90) currentStudentLetterGrade = "A-";
+    else if (currentStudentGrade >= 87) currentStudentLetterGrade = "B+";
+    else if (currentStudentGrade >= 83) currentStudentLetterGrade = "B";
+    else if (currentStudentGrade >= 80) currentStudentLetterGrade = "B-";
+    else if (currentStudentGrade >= 77) currentStudentLetterGrade = "C+";
+    else if (currentStudentGrade >= 73) currentStudentLetterGrade = "C";
+    else if (currentStudentGrade >= 70) currentStudentLetterGrade = "C-";
+    else if (currentStudentGrade >= 67) currentStudentLetterGrade = "D+";
+    else if (currentStudentGrade >= 63) currentStudentLetterGrade = "D";
+    else if (currentStudentGrade >= 60) currentStudentLetterGrade = "D-";
+    else currentStudentLetterGrade = "F";
 
     Console.WriteLine($"{currentStudent}\t\t{currentStudentExamScore}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCreditScore} ({((decimal)sumExtraCreditScores / 10) / examAssignments} pts)");
 }
